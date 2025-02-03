@@ -8,21 +8,21 @@ const Logo = ({ isSticky }) => {
   return (
     <Link href="/" className="logo">
       <Image
-        className={`w-15 h-15  ${
+        className={`w-[5rem] h-[5rem]  ${
           isInnerPage && !isSticky
             ? "inline-block   "
             : " hidden dark:inline-block"
         } `}
-        src="/img/logo/logo.png"
+        src="/img/logo/1.png"
         alt=""
         width={1000}
         height={1000}
       />
       <Image
-        className={`w-15 h-15  ${
+        className={`w-[5rem] h-[5rem]  ${
           isInnerPage && !isSticky ? "hidden" : "inlin-block dark:hidden"
         }`}
-        src="/img/logo/logo-dark.png"
+        src="/img/logo/2.png"
         alt=""
         width={1000}
         height={1000}

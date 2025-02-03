@@ -33,7 +33,7 @@ const Header = ({ isSticky }) => {
                 <li>
                   <Logo isSticky={isSticky} />
                 </li>
-                <li className="hidden md:block">
+                {/* <li className="hidden md:block">
                   <Link
                     href="mailto:mail@gerolddesign.com"
                     className={`text-size-15 font-medium ${
@@ -44,7 +44,7 @@ const Header = ({ isSticky }) => {
                   >
                     mail@gerolddesign.com
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             {/* <!-- main menu --> */}

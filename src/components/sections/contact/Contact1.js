@@ -102,7 +102,7 @@ const Contact1 = () => {
                         href="tel:0123456789"
                         className="text-primary-color-light dark:text-white-color text-lg lg:text-xl font-medium hover:text-primary-color"
                       >
-                        +01 123 654 8096
+                        +961 76 947 200
                       </a>
                     </div>
                   </li>
@@ -121,7 +121,7 @@ const Contact1 = () => {
                         href="mailto:mail@mail.com"
                         className="text-primary-color-light dark:text-white-color text-lg lg:text-xl font-medium hover:text-primary-color"
                       >
-                        gerolddesign@mail.com
+                        Abbassmonzer1997@gmail.com
                       </a>
                     </div>
                   </li>

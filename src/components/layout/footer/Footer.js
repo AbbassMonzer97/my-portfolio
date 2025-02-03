@@ -17,12 +17,7 @@ const Footer = () => {
           <div className="flex flex-col items-center pt-50px pb-5 md:pt-60px">
             <div className="footer-logo w-75px h-75px mb-6">
               <Link href="/">
-                <Image
-                  src="/img/logo/logo.png"
-                  alt=""
-                  width={400}
-                  height={400}
-                />
+                <Image src="/img/logo/1.png" alt="" width={400} height={400} />
               </Link>
             </div>
             {/* <!-- nav --> */}
