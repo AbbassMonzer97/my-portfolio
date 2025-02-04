@@ -150,13 +150,13 @@ const Contact1 = () => {
                         placeholder="Phone number"
                         className="text-white-color w-full px-5 py-14px border border-gray-color-3 bg-cream-light-color dark:bg-black-color focus:border-primary-color rounded-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1"
                       />
-                      {/* {errors.phone && (
+                      {errors.phone && (
                         <div>
                           <p className="text-red-300 text-left text-sm mt-[10px] ml-[10px]">
                             {errors.phone}
                           </p>
                         </div>
-                      )} */}
+                      )}
                     </div>
                     {/* <div className="form_group sm:col-start-1 sm:col-span-2">
                       <FormSelect />
