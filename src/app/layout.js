@@ -13,8 +13,8 @@ import { Suspense } from "react";
 import ThmeModeSwither from "@/components/shared/others/ThmeModeSwither";
 
 export const metadata = {
-  title: "Abbass - Personal Portfolio",
-  description: "Abbass - Personal Portfolio",
+  title: "Abbass Monzer",
+  description: "Personal Portfolio",
 };
 
 export default function RootLayout({ children }) {
