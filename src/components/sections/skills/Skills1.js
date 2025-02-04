@@ -21,8 +21,8 @@ const Skills1 = ({ type }) => {
               className="text-primary-color-light dark:text-body-color max-w-700px wow fadeInUp"
               data-wow-delay=".4s"
             >
-              We put your ideas and thus your wishes in the form of a unique web
-              project that inspires you and you customers.
+              From beautiful designs to powerful web apps, I turn ideas into
+              reality with clean code and the latest web technologies
             </p>
           </div>
           {/* <!-- skills --> */}

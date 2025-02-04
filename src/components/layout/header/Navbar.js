@@ -39,8 +39,8 @@ const Navbar = ({ isActiveMobileMenu, setIsActiveMobileMenu, isSticky }) => {
           {isResumeBtn ? (
             <ButtonPrimary2 url={"#"}>Resume</ButtonPrimary2>
           ) : (
-            <ButtonPrimary url={isIndexPage ? "#contact" : "/#contact"}>
-              Hire Me!
+            <ButtonPrimary url="https://calendly.com/abbassmonzer1997">
+              Book a Meeting
             </ButtonPrimary>
           )}
         </li>

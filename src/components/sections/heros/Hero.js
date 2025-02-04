@@ -7,7 +7,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="hero-section relative pt-130px lg:pt-40 xl:pt-200px pb-10 md:pb-30px lg:pb-50px after:absolute after:top-0 after:right-0 after:w-322px after:h-308px after:blur-[150px] after:rounded-50% after:bg-gradient-circle after:-z-1 after:-mt-5% after:-mr-5% overflow-hidden">
+    <section
+      id="home"
+      className="hero-section relative pt-130px lg:pt-40 xl:pt-200px pb-10 md:pb-30px lg:pb-50px after:absolute after:top-0 after:right-0 after:w-322px after:h-308px after:blur-[150px] after:rounded-50% after:bg-gradient-circle after:-z-1 after:-mt-5% after:-mr-5% overflow-hidden"
+    >
       {/* <!-- intro tex --> */}
       <div className="intro_text">
         <svg viewBox="0 0 1320 300" className="overflow-hidden">
@@ -28,7 +31,7 @@ const Hero = () => {
             </h1>
             <div className="flex md:hidden justify-center items-center my-30px">
               <Image
-                src="/img/hero/me2.png"
+                src="/img/hero/me3.jpeg"
                 width={437}
                 height={475}
                 alt="banner image"
@@ -37,15 +40,15 @@ const Hero = () => {
             </div>
             <p className="text-xl leading-1.5 text-primary-color-light dark:text-body-color max-w-540px">
               I break down complex user experinece problems to create integritiy
-              focussed solutions that connect billions of people
+              focussed solutions.
             </p>
             {/* <!-- action and social --> */}
             <div className="flex items-center gap-30px lg:gap-25px mt-5 flex-wrap lg:flex-nowrap md:mt-30px lg:mt-50px">
               <div>
                 <ButtonSeondary
-                  url="/img/portfolio/Abbass-CV.pdf"
+                  url="/img/portfolio/AbbassMonzer-Resume.pdf"
                   download={{
-                    path: "/img/portfolio/Abbass-CV.pdf",
+                    path: "/img/portfolio/AbbassMonzer-Resume.pdf",
                     fileName: "MyResume.pdf",
                   }}
                 >
@@ -59,7 +62,7 @@ const Hero = () => {
           </div>
           <div className="hidden md:flex md:justify-center md:items-center relative after:absolute after:bottom-0 after:left-0 after:w-220px after:h-220px after:blur-[150px] after:rounded-50% after:bg-gradient-circle after:-z-1 after:-mt-5% after:-mr-5%">
             <Image
-              src="/img/hero/me2.png"
+              src="/img/hero/me3.jpeg"
               width={437}
               height={475}
               alt="banner image"

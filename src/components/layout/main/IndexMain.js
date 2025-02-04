@@ -15,12 +15,12 @@ const IndexMain = () => {
     <main>
       <Hero />
       <Services1 />
-      <Portfolio1 />
-      <Resume1 />
       <Skills1 />
-      <Testimonials1 />
-      <Blogs1 />
+      <Portfolio1 />
       <Contact1 />
+      {/* <Resume1 /> */}
+      {/* <Testimonials1 /> */}
+      {/* <Blogs1 /> */}
     </main>
   );
 };

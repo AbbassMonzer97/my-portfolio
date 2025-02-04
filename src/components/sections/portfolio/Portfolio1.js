@@ -22,14 +22,14 @@ const Portfolio1 = () => {
               className="text-primary-color-light dark:text-body-color max-w-700px wow fadeInUp"
               data-wow-delay=".4s"
             >
-              We put your ideas and thus your wishes in the form of a unique web
-              project that inspires you and you customers.
+              Here are some of the websites I have worked on. Some were
+              collaborative projects completed during my full-time roles.
             </p>
           </div>
           {/* <!-- portfolio --> */}
           <div className="portfolio-filter">
             {/* <!-- controllers --> */}
-            <ButtonGroup />
+            {/* <ButtonGroup /> */}
             {/* <!-- contents --> */}
             <div
               className="portfolio-box wow fadeInUp mt-30px md:mt-10 lg:mt-50px wow fadeInUp"

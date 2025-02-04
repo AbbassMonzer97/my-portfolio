@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "title": "Web Development",
+    "title": "Full-Stack Web Development",
     "img": "/img/services/1.png",
     "iconName": "flaticon-design",
 
     "desc": "Elizabeth some dodgy chavs are you taking the piss faff about pardon amongst car boot a load of old tosh is cracking goal blow off telling brown.",
-    "shortDesc": "Ensure your website looks great on any device,with layouts that adapt to different screen sizes seamlessly.",
+    "shortDesc": "Bringing your ideas to life with modern, high-performance websites. I build fast, responsive, and scalable web applications using the latest technologies like React.js, Next.js, Angular, and Node.js, ensuring a smooth and seamless experience for your users on any device.",
     "desc1": "Brolly show off show off pick your nose and blow off well A bit of how’s your father tomfoolery blimey, me old mucker starkers Queen’s English dropped a clanger bite your arm spiffing good time burke Why chancer. Hotpot bum bag cracking goal young delinquent naff bugger cup of chars bender loo it’s all gone to pot the nancy cheeky.",
     "desc2": "At public school cras bog some dodgy chav Richard Why argy bargy vagabon William bender matie boy, off his nut chancer Jeffrey up the kyver say mufty you mug ummm telling pear shaped Oxford owt to do with me do one so said are you taking his.",
     "totalProject": "10 Projects",
@@ -28,12 +28,12 @@
   },
   {
     "id": 2,
-    "title": "UI/UX Design",
+    "title": "UI/UX Development",
     "img": "/img/services/2.png",
     "iconName": "flaticon-ux-design",
 
     "desc": "Elizabeth some dodgy chavs are you taking the piss faff about pardon amongst car boot a load of old tosh is cracking goal blow off telling brown.",
-    "shortDesc": "Set up user-friendly CMS solutions like WordPress or custom-built options so clients can manage content  easily.",
+    "shortDesc": "Beautiful, user-friendly designs that enhance engagement. I turn your Figma/Adobe XD designs into fully functional and mobile-friendly websites, making sure they look stunning and are easy to navigate using Tailwind CSS, Bootstrap, and SCSS.",
     "desc1": "Brolly show off show off pick your nose and blow off well A bit of how’s your father tomfoolery blimey, me old mucker starkers Queen’s English dropped a clanger bite your arm spiffing good time burke Why chancer. Hotpot bum bag cracking goal young delinquent naff bugger cup of chars bender loo it’s all gone to pot the nancy cheeky.",
     "desc2": "At public school cras bog some dodgy chav Richard Why argy bargy vagabon William bender matie boy, off his nut chancer Jeffrey up the kyver say mufty you mug ummm telling pear shaped Oxford owt to do with me do one so said are you taking his.",
     "totalProject": "11 Projects",
@@ -55,12 +55,12 @@
   },
   {
     "id": 3,
-    "title": "Content Writing",
+    "title": "Custom Web Solutions & CMS Integration",
     "img": "/img/services/3.png",
     "iconName": "flaticon-web-design",
 
     "desc": "Elizabeth some dodgy chavs are you taking the piss faff about pardon amongst car boot a load of old tosh is cracking goal blow off telling brown.",
-    "shortDesc": "Build and integrate APIs to connect websites with third-party applications, enhancing functionality and performance.",
+    "shortDesc": "Effortlessly manage your website with a powerful, flexible system. I build custom web platforms and integrate Strapi CMS, allowing you to update content, images, and products with ease—no technical skills required. Whether it’s an online store, a blog, or a corporate website, I ensure a smooth, user-friendly experience for both you and your visitors.",
     "desc1": "Brolly show off show off pick your nose and blow off well A bit of how’s your father tomfoolery blimey, me old mucker starkers Queen’s English dropped a clanger bite your arm spiffing good time burke Why chancer. Hotpot bum bag cracking goal young delinquent naff bugger cup of chars bender loo it’s all gone to pot the nancy cheeky.",
     "desc2": "At public school cras bog some dodgy chav Richard Why argy bargy vagabon William bender matie boy, off his nut chancer Jeffrey up the kyver say mufty you mug ummm telling pear shaped Oxford owt to do with me do one so said are you taking his.",
     "totalProject": "15 Projects",
@@ -82,12 +82,12 @@
   },
   {
     "id": 4,
-    "title": "Digital Marketing",
+    "title": "Performance Optimization & Deployment",
     "img": "/img/services/4.png",
     "iconName": "flaticon-3d-movie",
 
     "desc": "Elizabeth some dodgy chavs are you taking the piss faff about pardon amongst car boot a load of old tosh is cracking goal blow off telling brown.",
-    "shortDesc": "Refresh outdated websites with modern, appealing designs that align with current brand goals and user expectations.",
+    "shortDesc": "Faster, more secure, and hassle-free websites. I make sure your website loads quickly, ranks well on Google (SEO), and runs efficiently. With secure hosting, automated updates, and smooth deployments, your site stays fast, secure, and always online.",
     "desc1": "Brolly show off show off pick your nose and blow off well A bit of how’s your father tomfoolery blimey, me old mucker starkers Queen’s English dropped a clanger bite your arm spiffing good time burke Why chancer. Hotpot bum bag cracking goal young delinquent naff bugger cup of chars bender loo it’s all gone to pot the nancy cheeky.",
     "desc2": "At public school cras bog some dodgy chav Richard Why argy bargy vagabon William bender matie boy, off his nut chancer Jeffrey up the kyver say mufty you mug ummm telling pear shaped Oxford owt to do with me do one so said are you taking his.",
     "totalProject": "10 Projects",

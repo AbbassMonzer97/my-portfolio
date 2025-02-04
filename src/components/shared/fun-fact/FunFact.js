@@ -10,14 +10,14 @@ const FunFact = () => {
   const [value, setValue] = useState(0);
   const [value2, setValue2] = useState(0);
   const [value3, setValue3] = useState(0);
-  const [value4, setValue4] = useState(0);
+  const [value4, setValue4] = useState("");
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      setValue(14);
-      setValue2(50);
-      setValue3(1.5);
-      setValue4(14);
+      setValue(5);
+      setValue2(10);
+      setValue3(500);
+      setValue4("50K");
     }, 1000);
     return () => {
       clearTimeout(timeoutId);
@@ -61,7 +61,7 @@ const FunFact = () => {
                   className="!font-sora tracking-[0.04em]"
                   value={value3}
                 />{" "}
-                <span className="symbol">K</span>
+                <span className="symbol">+</span>
               </div>
               <div className="text">
                 Happy <br />
@@ -74,11 +74,12 @@ const FunFact = () => {
                 <Odometer
                   className="!font-sora tracking-[0.04em]"
                   value={value4}
-                />
+                />{" "}
+                <span className="symbol">K+</span>
               </div>
               <div className="text">
-                Years of <br />
-                Experience
+                Lines of <br />
+                Code
               </div>
             </div>
           </div>

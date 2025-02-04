@@ -6,7 +6,7 @@ import Link from "next/link";
 const Logo = ({ isSticky }) => {
   const { isInnerPage } = useHeaderContext();
   return (
-    <Link href="/" className="logo">
+    <Link href="#home" className="logo">
       <Image
         className={`w-[5rem] h-[5rem]  ${
           isInnerPage && !isSticky

@@ -1,7 +1,65 @@
-import FormSelect from "@/components/shared/Inputs/FormSelect";
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const Contact1 = () => {
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [form, setForm] = useState({
+    fname: "",
+    lname: "",
+    email: "",
+    phone: "",
+    comment: "",
+  });
+
+  const [errors, setErrors] = useState({
+    fname: "",
+    lname: "",
+    email: "",
+    phone: "",
+    comment: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prevForm) => ({ ...prevForm, [name]: value }));
+    setErrors((prevErrors) => ({ ...prevErrors, [name]: "" }));
+  };
+
+  const validateForm = () => {
+    const newErrors = {
+      fname: form.fname.trim() === "" ? "Please enter you first name" : "",
+      lname: form.lname.trim() === "" ? "Please enter you last name" : "",
+      email: form.email.trim() === "" ? "Please enter your email" : "",
+      phone: form.phone.trim() === "" ? "Please enter your number" : "",
+      comment: form.comment.trim() === "" ? "Please enter your message" : "",
+    };
+
+    setErrors(newErrors);
+
+    return (
+      !newErrors.fname &&
+      !newErrors.lname &&
+      !newErrors.email &&
+      !newErrors.phone &&
+      !newErrors.comment
+    );
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!validateForm()) {
+      return;
+    } else {
+      setShowSuccess(true);
+      setForm({
+        fname: "",
+        lname: "",
+        email: "",
+        phone: "",
+        comment: "",
+      });
+    }
+  };
   return (
     <section id="contact">
       <div className="bg-cream-light-color dark:bg-black-color py-60px md:py-20 lg:py-100px xl:py-30">
@@ -31,49 +89,100 @@ const Contact1 = () => {
                     {/* <!-- first name --> */}
                     <div>
                       <input
+                        name="fname"
                         type="text"
+                        value={form.fname}
+                        onChange={handleChange}
                         placeholder="First name"
                         className="text-white-color w-full px-5 py-14px border border-gray-color-3 bg-cream-light-color dark:bg-black-color focus:border-primary-color rounded-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1"
                       />
+                      {errors.fname && (
+                        <div>
+                          <p className="text-red-300 text-left text-sm mt-[10px] ml-[10px]">
+                            {errors.fname}
+                          </p>
+                        </div>
+                      )}
                     </div>
                     {/* <!-- Last name --> */}
                     <div>
                       <input
                         type="text"
+                        name="lname"
+                        value={form.lname}
+                        onChange={handleChange}
                         placeholder="Last name"
                         className="text-white-color w-full px-5 py-14px border border-gray-color-3 bg-cream-light-color dark:bg-black-color focus:border-primary-color rounded-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1"
                       />
+                      {errors.lname && (
+                        <div>
+                          <p className="text-red-300 text-left text-sm mt-[10px] ml-[10px]">
+                            {errors.lname}
+                          </p>
+                        </div>
+                      )}
                     </div>
                     {/* <!-- Email address --> */}
                     <div>
                       <input
+                        name="email"
+                        value={form.email}
+                        onChange={handleChange}
                         type="email"
                         placeholder="Email address"
                         className="text-white-color w-full px-5 py-14px border border-gray-color-3 bg-cream-light-color dark:bg-black-color focus:border-primary-color rounded-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1"
                       />
+                      {errors.email && (
+                        <div>
+                          <p className="text-red-300 text-left text-sm mt-[10px] ml-[10px]">
+                            {errors.email}
+                          </p>
+                        </div>
+                      )}
                     </div>
                     {/* <!-- Phone number --> */}
                     <div>
                       <input
-                        type="text"
+                        name="phone"
+                        value={form.phone}
+                        onChange={handleChange}
+                        type="number"
                         placeholder="Phone number"
                         className="text-white-color w-full px-5 py-14px border border-gray-color-3 bg-cream-light-color dark:bg-black-color focus:border-primary-color rounded-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1"
                       />
+                      {/* {errors.phone && (
+                        <div>
+                          <p className="text-red-300 text-left text-sm mt-[10px] ml-[10px]">
+                            {errors.phone}
+                          </p>
+                        </div>
+                      )} */}
                     </div>
-                    <div className="form_group sm:col-start-1 sm:col-span-2">
+                    {/* <div className="form_group sm:col-start-1 sm:col-span-2">
                       <FormSelect />
-                    </div>
+                    </div> */}
                     <div className="sm:col-start-1 sm:col-span-2">
                       <textarea
+                        name="comment"
+                        value={form.comment}
+                        onChange={handleChange}
                         cols="1"
                         rows="10"
                         placeholder="Message"
                         className="text-white-color w-full px-5 py-14px border border-gray-color-3 bg-cream-light-color dark:bg-black-color focus:border-primary-color rounded-lg outline-none focus:outline-none transition-all duration-300 placeholder:text-gray-color leading-1"
                       />
+                      {errors.comment && (
+                        <div>
+                          <p className="text-red-300 text-left text-sm mt-[10px] ml-[10px]">
+                            {errors.comment}
+                          </p>
+                        </div>
+                      )}
                     </div>
                     <div className="sm:col-start-1 sm:col-span-2">
                       <button
                         type="submit"
+                        onClick={handleSubmit}
                         className="text-size-15 font-bold text-white-color capitalize py-17px px-35px bg-200 bg-gradient-secondary hover:bg-[-100%] rounded-full leading-1 transition-all duration-300"
                       >
                         Send Message
@@ -88,7 +197,7 @@ const Contact1 = () => {
               <div className="contact-info-list">
                 <ul className="flex flex-col gap-y-10">
                   <li
-                    className="flex  items-center gap-25px position-relative wow fadeInRight"
+                    className="flex  items-center md:gap-25px gap-3 position-relative wow fadeInRight"
                     data-wow-delay=".4s"
                   >
                     <div className="icon-box text-xl flex-shrink-0 w-50px h-50px text-white-color flex justify-center items-center flex-col bg-gradient-primary-2 rounded-full leading-1">
@@ -99,7 +208,7 @@ const Contact1 = () => {
                         Phone
                       </p>
                       <a
-                        href="tel:0123456789"
+                        href="https://wa.me/96176947200"
                         className="text-primary-color-light dark:text-white-color text-lg lg:text-xl font-medium hover:text-primary-color"
                       >
                         +961 76 947 200
@@ -107,7 +216,7 @@ const Contact1 = () => {
                     </div>
                   </li>
                   <li
-                    className="flex  items-center gap-25px position-relative wow fadeInRight"
+                    className="flex  items-center md:gap-25px gap-3 position-relative wow fadeInRight"
                     data-wow-delay=".5s"
                   >
                     <div className="icon-box text-xl flex-shrink-0 w-50px h-50px text-white-color flex justify-center items-center flex-col bg-gradient-primary-2 rounded-full leading-1">
@@ -118,7 +227,7 @@ const Contact1 = () => {
                         Email
                       </p>
                       <a
-                        href="mailto:mail@mail.com"
+                        href="mailto:Abbassmonzer1997@gmail.com"
                         className="text-primary-color-light dark:text-white-color text-lg lg:text-xl font-medium hover:text-primary-color"
                       >
                         Abbassmonzer1997@gmail.com
@@ -126,7 +235,7 @@ const Contact1 = () => {
                     </div>
                   </li>
                   <li
-                    className="flex  items-center gap-25px position-relative wow fadeInRight"
+                    className="flex  items-center md:gap-25px gap-3 position-relative wow fadeInRight"
                     data-wow-delay=".6s"
                   >
                     <div className="icon-box text-xl flex-shrink-0 w-50px h-50px text-white-color flex justify-center items-center flex-col bg-gradient-primary-2 rounded-full leading-1">
@@ -138,10 +247,9 @@ const Contact1 = () => {
                       </p>
                       <a
                         href="#"
-                        className="text-primary-color-light dark:text-white-color text-lg lg:text-xl font-medium hover:text-primary-color"
+                        className="text-primary-color-light dark:text-white-color text-lg lg:text-xl font-medium hover:text-primary-color cursor-default"
                       >
-                        Warne Park Street Pine, <br />
-                        FL 33157, New York
+                        Beirut, Lebanon
                       </a>
                     </div>
                   </li>
