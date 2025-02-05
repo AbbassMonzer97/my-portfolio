@@ -56,7 +56,10 @@ const Header = ({ isSticky }) => {
           </div>
         </div>
         {/* <!-- mobile menu --> */}
-        <MobileMenu isActiveMobileMenu={isActiveMobileMenu} />
+        <MobileMenu
+          isActiveMobileMenu={isActiveMobileMenu}
+          setIsActiveMobileMenu={setIsActiveMobileMenu}
+        />
       </div>
     </header>
   );

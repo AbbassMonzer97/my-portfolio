@@ -17,6 +17,7 @@
 }
 
 .progress-wrap.active-progress {
+  margin-bottom: 3rem;
   opacity: 1;
   visibility: visible;
   transform: translateY(0);

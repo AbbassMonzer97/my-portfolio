@@ -36,7 +36,14 @@ const Skills1 = ({ type }) => {
                   data-wow-delay={`.${3 + idx}s`}
                 >
                   {/* <!-- contents --> */}
-                  <div className="flex flex-col items-center py-25px px-15px md:pt-30px 2xl:pt-10 2xl:mb-30px rounded-25px bg-cream-light-color dark:bg-primary-color-light border border-transparent group-hover:border-primary-color group-hover:bg-seondary-color transition-all duration-500 mb-15px">
+                  <div
+                    className={`flex flex-col items-center py-25px px-15px md:pt-30px 2xl:pt-10 2xl:mb-30px rounded-25px bg-cream-light-color dark:bg-primary-color-light border
+                   border-transparent group-hover:border-primary-color group-hover:bg-seondary-color transition-all duration-500 mb-15px ${
+                     img == "/img/icons/next.png"
+                       ? "2xl:pt-[3rem] pt-[2.2rem]"
+                       : ""
+                   }`}
+                  >
                     <div className="mb-5 md:mb-30px mx-9 2xl:mx-44px w-60px flex flex-col justify-center items-center">
                       <Image
                         className="grayscale-[90%] group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110  group-hover:opacity-100 w-60px"

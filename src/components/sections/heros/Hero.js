@@ -35,7 +35,7 @@ const Hero = () => {
                 width={437}
                 height={475}
                 alt="banner image"
-                className="rounded-38px border-2 border-seondary-color hover:border-primary-color rotate-[4.29deg] hover:rotate-0 transition-all duration-300 max-w-[80%]"
+                className="rounded-38px border-2 border-seondary-color hover:border-primary-color hover:rotate-[4.29deg] rotate-0 transition-all duration-300 max-w-[80%]"
               />
             </div>
             <p className="text-xl leading-1.5 text-primary-color-light dark:text-body-color max-w-540px">
@@ -66,7 +66,7 @@ const Hero = () => {
               width={437}
               height={475}
               alt="banner image"
-              className="rounded-38px border-2 border-seondary-color hover:border-primary-color rotate-[4.29deg] hover:rotate-0 transition-all duration-300"
+              className="rounded-38px border-2 border-seondary-color hover:border-primary-color hover:rotate-[4.29deg] hover:rotate-0 transition-all duration-300"
             />
           </div>
         </div>

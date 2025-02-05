@@ -1,7 +1,7 @@
 [
   {
-    "name": "Figma",
-    "img": "/img/icons/figma.png",
+    "name": "Strapi",
+    "img": "/img/icons/strapi.png",
     "perchant": "70%"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "name": "Nextjs",
-    "img": "/img/icons/nextjs.png",
+    "img": "/img/icons/next.png",
     "perchant": "88%"
   },
   {
