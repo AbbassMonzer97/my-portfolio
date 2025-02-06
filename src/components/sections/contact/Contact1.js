@@ -83,8 +83,7 @@ const Contact1 = () => {
                         className="text-primary-color-light dark:text-body-color wow fadeInLeft"
                         data-wow-delay=".4s"
                       >
-                        I design and code beautifully simple things and i love
-                        what i do. Just simple like that!
+                        Turning your ideas into reality.
                       </p>
                     </div>
                     {/* <!-- inputs --> */}

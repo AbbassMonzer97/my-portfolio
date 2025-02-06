@@ -39,8 +39,8 @@ const Hero = () => {
               />
             </div>
             <p className="text-xl leading-1.5 text-primary-color-light dark:text-body-color max-w-540px">
-              I break down complex user experinece problems to create integritiy
-              focussed solutions.
+              I turn complex user experiences into simple, seamless, and
+              integrity-driven solutions.
             </p>
             {/* <!-- action and social --> */}
             <div className="flex items-center gap-30px lg:gap-25px mt-5 flex-wrap lg:flex-nowrap md:mt-30px lg:mt-50px">
