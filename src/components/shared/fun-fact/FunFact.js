@@ -16,7 +16,7 @@ const FunFact = () => {
     const timeoutId = setTimeout(() => {
       setValue(5);
       setValue2(10);
-      setValue3(500);
+      setValue3(50);
       setValue4("50K");
     }, 1000);
     return () => {
