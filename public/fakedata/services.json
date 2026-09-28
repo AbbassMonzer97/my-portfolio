@@ -106,5 +106,28 @@
         "Pioneering the Design World's First"
       ]
     }
+  },
+  {
+    "id": 5,
+    "title": "AI and Automation",
+    "img": "/img/services/1.png",
+    "iconName": "flaticon-code",
+    "desc": "I add AI and automation where it actually helps the product.",
+    "shortDesc": "Smarter features and automated workflows built into your product. I connect LLM APIs, retrieval with Pinecone and PGvector, and tools like n8n so your site can search, answer, and handle routine work without extra manual steps.",
+    "desc1": "I add AI and automation where it actually helps the product.",
+    "desc2": "Smarter features and automated workflows built into your product. I connect LLM APIs, retrieval with Pinecone and PGvector, and tools like n8n so your site can search, answer, and handle routine work without extra manual steps.",
+    "totalProject": "AI Projects",
+    "process": {
+      "title": "Services Process",
+      "img": "/img/services/service-details.jpg",
+      "iconName": "flaticon-code",
+      "desc": "I add AI and automation where it actually helps the product.",
+      "processItems": [
+        "Connect the right data",
+        "Add retrieval and LLM APIs",
+        "Automate the repeated work",
+        "Keep the workflow easy to update"
+      ]
+    }
   }
 ]

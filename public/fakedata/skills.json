@@ -1,32 +1,40 @@
 [
   {
-    "name": "Strapi",
-    "img": "/img/icons/strapi.png",
-    "perchant": "70%"
+    "title": "Languages",
+    "items": ["JavaScript", "TypeScript", ".NET"]
   },
   {
-    "name": "Angular",
-    "img": "/img/icons/angular.png",
-    "perchant": "88%"
+    "title": "Frontend",
+    "items": ["Next.js", "React", "Angular", "React Native"]
   },
   {
-    "name": "Tailwind",
-    "img": "/img/icons/tailwind.png",
-    "perchant": "90%"
+    "title": "Backend",
+    "items": ["Node.js", "Strapi", "Express", "NestJS"]
   },
   {
-    "name": "Nextjs",
-    "img": "/img/icons/next.png",
-    "perchant": "88%"
+    "title": "Databases",
+    "items": ["PostgreSQL", "Supabase", "MongoDB"]
   },
   {
-    "name": "React",
-    "img": "/img/icons/react.png",
-    "perchant": "75%"
+    "title": "AI / Automation",
+    "items": [
+      "LLM APIs",
+      "Pinecone",
+      "n8n",
+      "RAG",
+      "AI agents"
+    ]
   },
   {
-    "name": "JavaScript",
-    "img": "/img/icons/js.png",
-    "perchant": "85%"
+    "title": "Styling",
+    "items": ["Tailwind CSS", "Bootstrap", "Shadcn UI", "Material UI"]
+  },
+  {
+    "title": "Cloud",
+    "items": ["AWS (basic)", "Supabase"]
+  },
+  {
+    "title": "Tools",
+    "items": ["Figma", "Cursor", "Claude Code", "Git"]
   }
 ]

@@ -1,6 +1,5 @@
 import HeadingPrimary from "@/components/shared/headings/HeadingPrimary";
 import getSkills from "@/libs/getSkills";
-import Image from "next/image";
 
 const Skills1 = ({ type }) => {
   const skills = getSkills();
@@ -25,42 +24,28 @@ const Skills1 = ({ type }) => {
               reality with clean code and the latest web technologies
             </p>
           </div>
-          {/* <!-- skills --> */}
-          <div className="skills">
-            <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-30px">
-              {/* <!-- skills single --> */}
-              {skills?.map(({ name, img, perchant }, idx) => (
-                <div
-                  key={idx}
-                  className="max-w-180px w-full group wow fadeInUp"
-                  data-wow-delay={`.${3 + idx}s`}
-                >
-                  {/* <!-- contents --> */}
-                  <div
-                    className={`flex flex-col items-center py-25px px-15px md:pt-30px 2xl:pt-10 2xl:mb-30px rounded-25px bg-cream-light-color dark:bg-primary-color-light border
-                   border-transparent group-hover:border-primary-color group-hover:bg-seondary-color transition-all duration-500 mb-15px ${
-                     img == "/img/icons/next.png"
-                       ? "2xl:pt-[3rem] pt-[2.2rem]"
-                       : ""
-                   }`}
-                  >
-                    <div className="mb-5 md:mb-30px mx-9 2xl:mx-44px w-60px flex flex-col justify-center items-center">
-                      <Image
-                        className="grayscale-[90%] group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110  group-hover:opacity-100 w-60px"
-                        src={img}
-                        alt={""}
-                        width={600}
-                        height={600}
-                      />
-                    </div>
-                    <div className="text-xl text-gray-color-2 group-hover:text-primary-color transition-none duration-300 font-extrabold">
-                      {perchant}
-                    </div>
-                  </div>
-                  <p className="text-primary-color text-center">{name}</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-5">
+            {skills?.map(({ title, items }, idx) => (
+              <div
+                key={title}
+                className="h-full rounded-2xl border border-[#e4dcf6] dark:border-[#322848] bg-white dark:bg-[#161222] px-5 py-5 wow fadeInUp"
+                data-wow-delay={`.${Math.min(idx + 3, 9)}s`}
+              >
+                <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.16em] text-primary-color">
+                  {title}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {items?.map((item) => (
+                    <span
+                      key={item}
+                      className="inline-flex items-center rounded-full border border-[#d9d0ea] dark:border-[#3d3552] px-3 py-1 text-sm leading-5 text-primary-color-light dark:text-[#eceaf1]"
+                    >
+                      {item}
+                    </span>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
