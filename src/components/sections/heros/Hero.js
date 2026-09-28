@@ -30,9 +30,9 @@ const Hero = () => {
             </h1>
             <div className="flex md:hidden justify-center items-center my-30px">
               <Image
-                src="/img/hero/abbass-hero.jpg"
+                src="/img/hero/abbass-hero-2.jpg"
                 width={437}
-                height={450}
+                height={512}
                 alt="banner image"
                 className="rounded-38px border-2 border-seondary-color hover:border-primary-color hover:rotate-[4.29deg] rotate-0 transition-all duration-300 max-w-[80%]"
               />
@@ -61,9 +61,9 @@ const Hero = () => {
           </div>
           <div className="hidden md:flex md:justify-center md:items-center relative after:absolute after:bottom-0 after:left-0 after:w-220px after:h-220px after:blur-[150px] after:rounded-50% after:bg-gradient-circle after:-z-1 after:-mt-5% after:-mr-5%">
             <Image
-              src="/img/hero/abbass-hero.jpg"
+              src="/img/hero/abbass-hero-2.jpg"
               width={437}
-              height={450}
+              height={512}
               alt="banner image"
               className="rounded-38px border-2 border-seondary-color hover:border-primary-color hover:rotate-[4.29deg] hover:rotate-0 transition-all duration-300"
             />
